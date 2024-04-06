@@ -20,7 +20,6 @@
     font-weight: 900;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
 
 .haeder__nav {
@@ -41,7 +40,7 @@
 }
 
 a.header__nav-btn {
-    background-color: black;
+    background-color: var(--blue);
     border-radius: 7px;
     padding: 13px 22px 17px;
     font-size: 24px;

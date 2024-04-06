@@ -1,12 +1,16 @@
 :root {
-    --textColor: #000;
+    --bg-color: #000;
+    --textColor: #fff;
     --yellow: #EBD96B;
+    --blue: #0558FC;
+    --purple: #9E24D8;
     --gray: #7f7f7f
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Russo One', sans-serif;
     color: var(--textColor);
+    background-color: var(--bg-color);
 }
 
 .container {
