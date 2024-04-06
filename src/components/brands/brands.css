@@ -1,10 +1,11 @@
-.brands {
-    padding: 60px 0 55px;
-    background-color: var(--yellow);
+.gradient {
+    background-image: linear-gradient(to right, #0558FC, #9E24D8);
+    max-height: 186px;
 }
 
-.brands__list {
+.puzzle--line {
     display: flex;
-    column-gap: 120px;
-    mix-blend-mode: multiply;
+    background-color: transparent;
+    padding: 0;
+    mix-blend-mode: overlay;
 }
