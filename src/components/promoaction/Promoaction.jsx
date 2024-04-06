@@ -1,5 +1,4 @@
 import './promoaction.css'
-import promoImg from './../../img/images/header-img.jpg'
 
 const Promoaction = () => {
     return (
@@ -9,25 +8,26 @@ const Promoaction = () => {
                 <div className="promo__text">
                     <div className="promo__title">
                         <span className='highlight'>
-                            <span>LET’S</span>
+                            <span>Учись</span>
                         </span>
-                        EXPLORE
-                        <span className='highlight highlight--yellow'>
-                            <span>UNIQUE</span>
+                        <span className='highlight highlight--purple'>
+                            <span>новому,</span>
                         </span>
-                         CLOTHES.
+                        <span className='highlight'>
+                            <span>играя</span>
+                        </span>
+                        <span className='highlight highlight--purple'>
+                            <span>весело!</span>
+                        </span>
                     </div>
                     <div className="promo__desc">
-                        Live for Influential and Innovative fashion!
+                        Открой для себя мир творчества с помощью пазлов!                    
                     </div>
                     <div className="promo__btn-wrapper">
                         <a href='#!' className='promo__btn'>
-                            Shop Now
+                            В каталог
                         </a>
                     </div>
-                </div>
-                <div className="promo__img">
-                    <img src={promoImg} alt='PromoImg'></img>
                 </div>
             </div>
         </div>

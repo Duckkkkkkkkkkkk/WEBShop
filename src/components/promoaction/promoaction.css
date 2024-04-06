@@ -4,11 +4,13 @@
 
 .promo__content {
     border-radius: 59px;
-    background-color: #F4F6F5;
+    background-image: url('./../../img/images/promo-bg.png');
+    background-repeat: no-repeat;
     display: flex;
     column-gap: 24px;
     padding-top: 68px;
     padding-left: 120px;
+    margin: 0px 100px 0px 100px;
 }
 
 .promo__title {
@@ -20,7 +22,7 @@
 }
 
 .promo__desc {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
     line-height: calc(48/32);
     letter-spacing: -0.05em;
@@ -37,15 +39,16 @@
 .promo__btn-wrapper::before {
     content: "";
     display: inline-block;
-    width: 190px;
-    height: 32px;
-    background-image: url('./../../img/icons/decor-yellow.svg');
-
+    width: 116px;
+    height: 120px;
+    padding-top: -5px;
+    rotate: 15deg;
+    background-image: url('./../../img/icons/ghost-icon.png');
 }
 
 .promo__btn {
     padding: 18px 40px;
-    background: #000;
+    background: var(--blue);
     border-radius: 10px;
 
     font-weight: 500;
@@ -69,15 +72,15 @@
     content: "";
     display: block;
     position: absolute;
-    top: -12px;
+    top: 5px;
     bottom: -0px;
     left: -40px;
     right: -160px;
-    background-color: #fff;
+    background-color: var(--blue);
     transform: rotate(-2deg);
 }
 
-.highlight--yellow::before {
-    background-color: var(--yellow);
+.highlight--purple::before {
+    background-color: var(--purple);
     right: -110px;
 }
