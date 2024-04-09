@@ -22,21 +22,17 @@
     letter-spacing: 0.03em;
 }
 
-.haeder__nav {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.01em;
-}
-
-.header__nav ul {
-    display: flex;
-    align-items: center;
-}
-
 .header__nav a {
     color: var(--textColor);
     margin-left: 33px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.header__nav a:hover {
+    transform: translateY(-3px);
+    color: var(--green);
 }
 
 a.header__nav-btn {

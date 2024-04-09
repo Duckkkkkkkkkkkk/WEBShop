@@ -1,0 +1,111 @@
+.sales {
+    margin-bottom: 63px;
+    padding-top: 40px;
+    background-color: var(--blue);
+    display: flex;
+    column-gap: 24px;
+}
+
+
+.sales__img {
+    display: flex;
+    max-width: 900px;
+}
+
+.sales__content {
+    display: flex;
+    column-gap: 24px;
+    margin: 0px 100px 0px 100px;
+}
+
+.sales__title {
+    margin-bottom: 40px;
+    font-size: 111px;
+    font-weight: 900;
+    line-height: 1.25;
+    max-width: 670px;
+}
+
+.sales__desc {
+    font-size: 34px;
+    line-height: calc(48/32);
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+    margin-top: 30px;
+}
+
+.sales__desc2 {
+    font-size: 20px;
+    line-height: calc(48/30);
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+    width: 400px;
+}
+
+.sales__btn-wrapper {
+    display: flex;
+    column-gap: 34px;
+    align-items: center;
+    padding: 20px 0px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.sales__btn-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 210px; /* Поместите псевдоэлемент слева от кнопки */
+    transform: translateY(-50%);
+    width: 116px;
+    height: 130px;
+    background-image: url('./../../img/icons/ghost-icon-green.png');
+    transition: transform 0.3s ease;
+    z-index: 0; /* Поместите псевдоэлемент под кнопку */
+}
+
+.sales__btn {
+    padding: 18px 40px;
+    background: var(--green);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    color: #fff;
+    position: relative; /* Позиционируйте кнопку относительно родительского элемента */
+    z-index: 1; /* Установите z-index, чтобы кнопка находилась над псевдоэлементом */
+    overflow: hidden; /* Скрыть часть псевдоэлемента, если он выходит за пределы кнопки */
+    transition: transform 0.3s ease;
+}
+
+.sales__btn:hover {
+    transform: translateY(-3px);
+}
+
+.sales__btn-wrapper:hover::before {
+    transform: translateY(-50%) rotate(5deg);
+}
+
+
+.highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight span {
+    position: relative;
+    color: var(--blue);
+}
+
+.highlight::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    bottom: -0px;
+    left: -40px;
+    right: -160px;
+    background-color: var(--textColor);
+    transform: rotate(-2deg);
+}

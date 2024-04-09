@@ -1,5 +1,5 @@
 .gradient {
-    background-image: linear-gradient(to right, #0558FC, #9E24D8);
+    background-image: url('./../../img/images/puzzle-line.png');
     max-height: 186px;
 }
 
@@ -7,5 +7,4 @@
     display: flex;
     background-color: transparent;
     padding: 0;
-    mix-blend-mode: overlay;
 }

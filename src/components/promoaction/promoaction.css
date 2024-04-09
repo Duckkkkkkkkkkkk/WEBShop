@@ -10,7 +10,7 @@
     column-gap: 24px;
     padding-top: 68px;
     padding-left: 120px;
-    margin: 0px 100px 0px 100px;
+    margin: 0px 30px 0px 30px;
 }
 
 .promo__title {
@@ -33,42 +33,59 @@
     display: flex;
     column-gap: 34px;
     align-items: center;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px;
+    position: relative;
 }
 
 .promo__btn-wrapper::before {
     content: "";
-    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 210px;
+    transform: translateY(-50%);
     width: 116px;
-    height: 120px;
-    padding-top: -5px;
-    rotate: 15deg;
-    background-image: url('./../../img/icons/ghost-icon.png');
+    height: 130px;
+    background-image: url('./../../img/icons/ghost-icon-green.png');
+    transition: transform 0.3s ease;
+    z-index: 0;
 }
 
 .promo__btn {
     padding: 18px 40px;
-    background: var(--blue);
+    margin-bottom: 20px;
+    background: var(--green);
     border-radius: 10px;
-
     font-weight: 500;
     font-size: 30px;
     line-height: 1.5;
     letter-spacing: -0.05em;
     color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-.highlight {
+.promo__btn:hover {
+    transform: translateY(-3px);
+}
+
+.promo__btn-wrapper:hover::before {
+    transform: translateY(-50%) rotate(5deg);
+}
+
+
+.highlight__blue {
     position: relative;
     display: inline-block;
 }
 
-.highlight span {
+.highlight__blue span {
     position: relative;
 
 }
 
-.highlight::before {
+.highlight__blue::before {
     content: "";
     display: block;
     position: absolute;
@@ -81,6 +98,6 @@
 }
 
 .highlight--purple::before {
-    background-color: var(--purple);
+    background-color: var(--green);
     right: -110px;
 }
