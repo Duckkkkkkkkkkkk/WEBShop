@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import logoImg from './../../img/icons/logo.svg'
 import './header.css'
 
@@ -14,9 +16,10 @@ function Header () {
                     <nav className="header__nav">
                         <ul>
                             <li>
-                                <a href="#!">Каталог</a>
-                                <a href="#!">О нас</a>
-                                <a href="#!">Контакты</a>
+                                <Link to="/catalog">Главная</Link>
+                                <Link to="/catalog">Каталог</Link>
+                                <Link to="/about">О нас</Link>
+                                <Link to="/contacts">Контакты</Link>
                                 <a href="#!" className="header__nav-btn">Войти</a>
                             </li>
                         </ul>
