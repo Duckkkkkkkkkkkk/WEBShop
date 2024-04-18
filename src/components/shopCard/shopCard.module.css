@@ -1,0 +1,197 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(to right, var(--blue), var(--green) );
+}
+
+.card__image a.image {
+    display: block;
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.card.new .card__image a.image:before,
+.card .card__image a.image:after {
+    content: '';
+    background-color: #CDE4FF;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+}
+
+.card .card__image a.image:after {
+    height: 90px;
+    width: 160px;
+    right: auto;
+    left: -200px;
+    top: auto;
+    bottom: -70px;
+    transition: all 0.5s ease;
+}
+
+.card:hover .card__image a.image:after {
+    left: -25px;
+    bottom: -20px;
+}
+
+.card__image img {
+    width: 100%;
+    height: auto;
+}
+
+.social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.social li {
+    margin-bottom: 4px;
+    transform: translateX(100px);
+    transition: all 0.5s ease;
+}
+
+.card:hover .social li {
+    transform: translateX(0);
+}
+
+.card:hover .social li:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.card:hover .social li:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.social li:last-child {
+    margin: 0;
+}
+
+.social li a {
+    background: #CDE4FF;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+    height:45px;
+    width: 45px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    transition: all 200ms ease 0s;
+}
+
+.social li a .social__icon {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.social li a:hover {
+    background: var(--light-blue);
+}
+
+.social li a:before,
+.social li a:after {
+    content: attr(data-tip);
+    color: var(--textColor);
+    background-color: var(--blue);
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    visibility: hidden;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transition: all 0.3s ease;
+}
+
+.card .social li a:after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    border-radius: 0;
+    transform: translateY(-50%) rotate(45deg);
+    right: 58px;
+    z-index: -1;
+}
+
+.social li a:hover:before,
+.social li a:hover:after {
+    visibility: visible;
+}
+
+.card .social li a:hover:before {
+     right: 55px; 
+}
+
+.card .social li a:hover:after {
+     right: 53px; 
+}
+
+.card .card__price {
+    color: var(--blue);
+    font-size: 22px;
+    position: relative;
+    bottom: 40px;
+    left: 15px;
+}
+
+.card__content {
+    padding-top: 12px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.card__title {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.card__title a {
+    color: var(--textColor);
+    transition: all 0.3s ease;
+}
+
+.card__title a:hover {
+    color: var(--light-blue);
+}
+
+.card__category {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card__rating {
+    display: flex;
+    margin-bottom: 7px;
+    column-gap: 5px;
+}
+
+.card__rating span{
+    font-size: 15px;
+}
+
+.stars {
+    display: inline-block;
+    width: 17px;
+    padding-bottom: 2px;
+}
+
+@media screen and (max-width: 990px) {
+    .card {
+        margin-bottom: 30px;
+    }
+}

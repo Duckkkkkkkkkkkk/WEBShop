@@ -1,0 +1,21 @@
+.products {
+    padding-top: 50px;
+    padding-bottom: 143px;
+}
+
+
+.products__header {
+    margin-bottom: 50px;
+}
+
+.products__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.products__cards > * {
+    flex: 1 1 calc(25% - 30px);
+    max-width: calc(25% - 30px);
+}
