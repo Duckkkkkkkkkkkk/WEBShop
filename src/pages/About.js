@@ -1,9 +1,10 @@
 import React from "react";
+import Hotspots from "../components/hotspots/Hotspots";
  
 const About = () => {
     return (
         <div>
-            <h1>Это о нас</h1>
+            <Hotspots />
         </div>
     );
 };

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ShoppingCard from '../shopCard/ShopCard';
-import card1 from './../../img/categories/product-card1.png';
 
 import card01 from './../../img/categories/cat-3d/card01.png';
 import card02 from './../../img/categories/cat-3d/card02.png';
@@ -44,14 +43,40 @@ const Products = () => {
     const [sortBy, setSortBy] = useState('priceLowToHigh');
 
     const products = [
-        { title: "Таинственная Япония", category: "Деревянные пазлы", price: "2220 руб.", img1: card1, stars: "4.9" },
-        { title: "Таинственная Япония", category: "Деревянные пазлы", price: "2200 руб.", img1: card1, stars: "4.7" },
-        { title: "Таинственная Япония", category: "3D-пазлы", price: "1780 руб.", img1: card1, stars: "4.5" },
-        { title: "Таинственная Япония", category: "Кристальные пазлы", price: "1000 руб.", img1: card1, stars: "4.9" },
-        { title: "Таинственная Япония", category: "Аниме пазлы", price: "1590 руб.", img1: card1, stars: "5.0" },
-        { title: "Таинственная Япония", category: "Пазлы WINX", price: "1600 руб.", img1: card1, stars: "4.8" },
-        { title: "Таинственная Япония", category: "Пазля для детей", price: "2080 руб.", img1: card1, stars: "4.7" },
-        { title: "Таинственная Япония", category: "Effect-пазлы", price: "1200 руб.", img1: card1, stars: "4.9" }
+        { title: "\"Чарующая сова\" 101 деталей Size S", category: "Деревянные пазлы", price: "1400 руб.", img1: card61, stars: "4.9" },
+        { title: "\"Таинственная Япония\" 200 деталей", category: "Деревянные пазлы", price: "1300 руб.", img1: card62, stars: "4.6" },
+        { title: "\"Таинственный лес\" 192 деталей Size M", category: "Деревянные пазлы", price: "1990 руб.", img1: card63, stars: "4.3" },
+        { title: "\"Жираф и небо\" 200 деталей", category: "Деревянные пазлы", price: "1850 руб.", img1: card64, stars: "4.7" },
+
+        { title: "\"Winx! My fairy friend\" пазлы 80 деталей", category: "Пазлы WINX", price: "739 руб.", img1: card51, stars: "5.0" },
+        { title: "\"Winx! My fairy friend\" пазлы 260 деталей", category: "Пазлы WINX", price: "990 руб.", img1: card52, stars: "4.9" },
+        { title: "\"World Winx\" пазлы 560 деталей", category: "Пазлы WINX", price: "1250 руб.", img1: card53, stars: "4.9" },
+        { title: "\"Winx! My fairy friend\"  jewels пазлы 104 деталей", category: "Пазлы WINX", price: "1020 руб.", img1: card54, stars: "4.8" },
+
+        { title: "\"Five Roses\" crystall puzzle 41 деталей", category: "Кристальные пазлы", price: "780 руб.", img1: card21, stars: "4.5" },
+        { title: "\"Dolphine\" crystall puzzle 41 деталей", category: "Кристальные пазлы", price: "590 руб.", img1: card22, stars: "4.9" },
+        { title: "\"Музыкальный замок со светом\" crystall puzzle 105 деталей", category: "Кристальные пазлы", price: "1580 руб.", img1: card23, stars: "5.0" },
+        { title: "\"Flying Horse\" crystall puzzle 42 деталей", category: "Кристальные пазлы", price: "739 руб.", img1: card24, stars: "4.3" },
+
+        { title: "\"Большой Лебовски\" 3D-пазлы картонные", category: "3D-пазлы", price: "849 руб.", img1: card01, stars: "5.0" },
+        { title: "\"Мастер Йода\" 3D-пазлы картонные", category: "3D-пазлы", price: "789 руб.", img1: card02, stars: "4.9" },
+        { title: "\"Batman\" 3D-пазлы картонные", category: "3D-пазлы", price: "1019 руб.", img1: card03, stars: "4.4" },
+        { title: "\"Статуя Давида\" 3D-пазлы картонные", category: "3D-пазлы", price: "995 руб.", img1: card04, stars: "4.8" },
+
+        { title: "Anime puzzle \"One Piece\" Weter World 1000 деталей", category: "Аниме пазлы", price: "4790 руб.", img1: card11, stars: "5.0" },
+        { title: "Anime puzzle \"Клинок, рассекающий демонов\" 1000 деталей", category: "Аниме пазлы", price: "2780 руб.", img1: card12, stars: "5.0" },
+        { title: "Anime puzzle \"Наруто. Путь ниндзя\" 160 деталей", category: "Аниме пазлы", price: "1590 руб.", img1: card13, stars: "4.9" },
+        { title: "Anime puzzle \"Dragon Ball Super Universe 7 Warriors\" 1000 деталей", category: "Аниме пазлы", price: "2590 руб.", img1: card14, stars: "5.0" },
+
+        { title: "Напольный пазл-мозаика \"На ферме\" (малые)", category: "Пазля для детей", price: "650 руб.", img1: card41, stars: "4.7" },
+        { title: "\"Зоопарк\" развивающий набор пазлов детский", category: "Пазля для детей", price: "990 руб.", img1: card42, stars: "4.7" },
+        { title: "Пазл \"Animal World\" 26 деталей ", category: "Пазля для детей", price: "550 руб.", img1: card43, stars: "4.9" },
+        { title: "Деревянная трехмерная головоломка \"Монтессори\"", category: "Пазля для детей", price: "1180 руб.", img1: card44, stars: "4.3" },
+
+        { title: "\"Мир динозавров\" пазлы с эффектом трехмерного изображения", category: "Effect-пазлы", price: "1250 руб.", img1: card31, stars: "4.9" },
+        { title: "\"Волшебство леса\" пазлы с эффектом трехмерного изображения", category: "Effect-пазлы", price: "1250 руб.", img1: card32, stars: "4.9" },
+        { title: "\"Эйфелева башня\" 3D-пазлы светящиеся", category: "Effect-пазлы", price: "1780 руб.", img1: card33, stars: "4.9" },
+        { title: "\"Биг Бен\" 3D-пазлы светящиеся", category: "Effect-пазлы", price: "1780 руб.", img1: card34, stars: "4.9" },
     ];
 
     const filterProductsByCategory = (product) => {

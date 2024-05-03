@@ -1,15 +1,15 @@
 .card {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 30px;
     background: linear-gradient(to right, var(--blue), var(--green) );
 }
 
 .card__image a.image {
     display: block;
     position: relative;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 30px;
 }
 
 .card.new .card__image a.image:before,
@@ -145,7 +145,7 @@
     font-size: 22px;
     position: relative;
     bottom: 40px;
-    left: 15px;
+    left: 20px;
 }
 
 .card__content {
@@ -170,8 +170,9 @@
 }
 
 .card__category {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
+    opacity: 75%;
 }
 
 .card__rating {
