@@ -1,4 +1,7 @@
 import React from "react";
+
+import { NavLink } from 'react-router-dom';
+
 import "./footer.css";
 
 import logoImg from './../../img/icons/logo.svg'
@@ -15,7 +18,6 @@ const Footer = () => {
     <div className="main-footer">
       <div className="container">
         <div className="row">
-          {/* Column1 */}
           <div className="footer-column">
             <div className="header__logo">
                 <img src={logoImg} alt="Logo"/>
@@ -37,16 +39,14 @@ const Footer = () => {
                 <div><a href="#!"><img src={inl} alt="LinkedIn"></img></a></div>
             </div>
           </div>
-          {/* Column2 */}
           <div className="footer-column2">
           <div className="header__footer">Меню</div>
             <ul className="list-unstyled">
-              <li><a href="#!">Каталог</a></li>
-              <li><a href="#!">О нас</a></li>
-              <li><a href="#!">Контакты</a></li>
+              <li><NavLink to="/catalog">Каталог</NavLink></li>
+              <li><NavLink to="/about">О нас</NavLink></li>
+              <li><NavLink to="/contacts">Контакты</NavLink></li>
             </ul>
           </div>
-          {/* Column3 */}
           <div className="footer-column2">
             <div className="header__footer">Свяжитесь с нами</div>
             <ul className="list-unstyled">

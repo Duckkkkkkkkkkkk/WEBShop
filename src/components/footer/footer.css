@@ -29,20 +29,20 @@
   }
   
   .header__footer {
-    color: #fff; /* Цвет текста */
-    font-size: 20px; /* Размер шрифта */
+    color: #fff;
+    font-size: 20px;
 }
 
 .footer-column2 a {
-    color: #fff; /* Цвет ссылок */
-    text-decoration: none; /* Убрать подчеркивание */
-    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Анимация */
-    display: inline-block; /* Добавлено */
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    display: inline-block;
 }
 
 .footer-column2 a:hover {
-    transform: translateY(-3px); /* Сдвиг вверх при наведении */
-    color: var(--blue) /* Новый цвет при наведении */
+    transform: translateY(-3px);
+    color: var(--blue)
 }
 
   

@@ -43,3 +43,13 @@ body {
     background-image: url('./../img/icons/decor-yellow.svg');
     background-repeat: no-repeat;
 }
+
+.title-3 {
+    display: inline-block;
+    position: relative;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.04;
+    letter-spacing: 0.06em;
+    text-align: center;   
+}

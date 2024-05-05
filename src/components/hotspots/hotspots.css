@@ -3,6 +3,7 @@
 }
 
 .hotspots__header {
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -234,7 +235,7 @@ img {
   color: transparent;    
 	-webkit-background-clip: text;
 	background-clip: text;
-	background-image: linear-gradient(to right, #0dff0d, #fff200, #ff9d00);
+	background-image: linear-gradient(to right,#00ffd5, #0dff0d, #fff200);
 }
 
 .popup-desc {
@@ -247,6 +248,7 @@ img {
 
 .map__wrapper {
     border: 10px solid #0038FF;
+    background-color: var(--bg-color);
     color: #fff;
     padding: 10px;
     position: relative;
@@ -315,7 +317,7 @@ img {
   font-size: 30px;
   color: var(--textColor);
   position: absolute;
-  top: 35%;
+  top: 145%;
   right: 15%;
   transform: translate(50%, 50%);
   text-align: left;
@@ -330,7 +332,7 @@ img {
   color: transparent;    
 	-webkit-background-clip: text;
 	background-clip: text;
-	background-image: linear-gradient(to right, #0dff0d, #fff200, #ff9d00);
+	background-image: linear-gradient(to right, #00ffd5, #0dff0d, #fff200);
 }
 
 .partners__img {

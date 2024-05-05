@@ -1,5 +1,7 @@
 import './promoaction.css'
 
+import { NavLink } from 'react-router-dom';
+
 const Promoaction = () => {
     return (
     <section className="promo">
@@ -24,9 +26,7 @@ const Promoaction = () => {
                         <div>с помощью пазлов!</div>
                     </div>
                     <div className="promo__btn-wrapper">
-                        <a href='#!' className='promo__btn'>
-                            В каталог
-                        </a>
+                        <NavLink className='promo__btn' to="/catalog" style={{ background: 'var(--green)'}}>В каталог</NavLink>
                     </div>
                 </div>
             </div>

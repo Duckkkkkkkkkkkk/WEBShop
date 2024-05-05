@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 import map from './../../img/images/map.png';
-import partners from './../../img/images/partners.png'
+import partners from './../../img/images/partners.png';
+import bg from './../../img/images/aboutus-bg.png';
 
 import './hotspots.css';
 

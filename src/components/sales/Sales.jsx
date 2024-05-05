@@ -1,4 +1,6 @@
 import './sales.css'
+import { NavLink } from 'react-router-dom';
+
 
 import salesImg from './../../img/images/sales-img.png'
 
@@ -26,9 +28,7 @@ const Sales = () => {
                         </div>                 
                     </div>
                     <div className="sales__btn-wrapper">
-                        <a href='#!' className='sales__btn'>
-                            В каталог
-                        </a>
+                        <NavLink className='sales__btn' to="/catalog">В каталог</NavLink>
                     </div>
                 </div>
             </div>
